@@ -1,2 +1,2 @@
 # Bootstrap-test
-A basic website utilizing bootstrap framework.
+Testing various features offered by bootstrap framework.
