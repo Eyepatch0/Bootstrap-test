@@ -1,0 +1,8 @@
+.custom-font{
+    font-family: 'Hurricane', cursive; 
+}
+@media(min-width: 768px){
+    .newsletter-input {
+        width: 50%;
+    }
+}
