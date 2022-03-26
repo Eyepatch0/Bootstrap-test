@@ -31,7 +31,7 @@
   </head>
   <body>
     <!-- starting with navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-2">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark px-4 py-2">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
@@ -55,10 +55,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Recent</a>
+              <a class="nav-link" href="#recent">Recent</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -96,7 +96,7 @@
       </div>
     </nav>
     <!-- end of navigation bar and beginning of main content -->
-    <section class="bg-dark text-light p-5 text-center">
+    <section class="bg-dark text-light p-5 text-center" id="home">
       <div class="container">
         <div class="d-sm-flex justify-content-between">
           <div class="d-sm-flex flex-column justify-content-center">
@@ -131,9 +131,9 @@
       </div>
     </section>
     <!-- start of stories -->
-    <section class=" story-container p-5">
+    <section class=" story-container p-4">
       <div class="container">
-        <div class="row text-center">
+        <div class="row text-center gy-2">
           <div class="col-md">
             <div class="card bg-dark text-light">
               <div class="card-body text center">
@@ -174,7 +174,7 @@
                 <div class="h1 mb-3">
                   <i class="bi bi-book"></i>
                 </div>
-                <div class="h3 card-title mb-3">Education</div>
+                <div class="h3 card-title mb-3">Educational Blogs</div>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Maxime quia voluptatibus iusto excepturi dignissimos est amet
@@ -185,6 +185,23 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of stories, beginning of linking -->
+    <section class="p-4" id="recent">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">  
+            <img src="./icons-hero.png" alt="bootstrap" class="img-fluid">  
+          </div>
+          <div class="col-md p-5">
+            <h2>Bootstrap v5.1</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas voluptates nobis tenetur eum dolorum consectetur inventore quas similique facere.</p>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, hic! Nesciunt distinctio nobis numquam laudantium consequatur ut, eveniet laboriosam impedit obcaecati voluptate assumenda sunt nemo corporis. Eum atque dicta voluptatum.</p>
+            <a href="https://getbootstrap.com/" class="btn btn-dark mt-3"><i class="bi bi-chevron-right"></i>Read Full Blog</a>
+
+          </div>  
         </div>
       </div>
     </section>
