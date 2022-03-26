@@ -9,3 +9,20 @@
 .story-container{
     background-color: #F5F5F5;
 }
+#goal{
+    font-family: 'Hurricane', cursive;
+}
+#members{
+    font-family: 'Hurricane', cursive;
+    font-weight:900;
+}
+section{
+    background-color: #F5F5F5;
+}
+#headingc{
+    font-family: 'Hurricane', cursive;
+}
+#foot{
+    background-color: black;
+
+}

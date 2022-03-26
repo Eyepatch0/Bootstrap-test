@@ -31,7 +31,9 @@
   </head>
   <body>
     <!-- starting with navigation bar -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark px-4 py-2">
+    <nav
+      class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark px-4 py-2"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
@@ -55,7 +57,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#recent">Recent</a>
@@ -72,11 +76,13 @@
                 About Us
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Our Goal</a></li>
-                <li><a class="dropdown-item" href="#">Our Members</a></li>
+                <li><a class="dropdown-item" href="#goal">Our Goal</a></li>
+                <li>
+                  <a class="dropdown-item" href="#members">Our Members</a>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Contacts</a>
+                  <a class="dropdown-item" href="#contacts">Contacts</a>
                 </li>
               </ul>
             </li>
@@ -102,7 +108,7 @@
           <div class="d-sm-flex flex-column justify-content-center">
             <h1>Welcome to our <span class="text-warning">Blogs</span></h1>
             <p class="h3 custom-font">The most informative blogsite</p>
-            <button class="btn btn-lg btn-outline-warning my-3">Sign up</button>
+            <button class="btn btn-lg btn-outline-warning my-3" data-bs-toggle="modal" data-bs-target="#modalRegisterForm" > Sign up</button>
           </div>
           <img
             class="img-fluid w-50 d-none d-sm-block px-sm-5"
@@ -131,7 +137,7 @@
       </div>
     </section>
     <!-- start of stories -->
-    <section class=" story-container p-4">
+    <section class="story-container p-4">
       <div class="container">
         <div class="row text-center gy-2">
           <div class="col-md">
@@ -192,18 +198,210 @@
     <section class="p-4" id="recent">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-md">  
-            <img src="./icons-hero.png" alt="bootstrap" class="img-fluid">  
+          <div class="col-md">
+            <img src="./icons-hero.png" alt="bootstrap" class="img-fluid" />
           </div>
           <div class="col-md p-5">
             <h2>Bootstrap v5.1</h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptas voluptates nobis tenetur eum dolorum consectetur inventore quas similique facere.</p>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, hic! Nesciunt distinctio nobis numquam laudantium consequatur ut, eveniet laboriosam impedit obcaecati voluptate assumenda sunt nemo corporis. Eum atque dicta voluptatum.</p>
-            <a href="https://getbootstrap.com/" class="btn btn-dark mt-3"><i class="bi bi-chevron-right"></i>Read Full Blog</a>
-
-          </div>  
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              voluptas voluptates nobis tenetur eum dolorum consectetur
+              inventore quas similique facere.
+            </p>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, hic!
+              Nesciunt distinctio nobis numquam laudantium consequatur ut,
+              eveniet laboriosam impedit obcaecati voluptate assumenda sunt nemo
+              corporis. Eum atque dicta voluptatum.
+            </p>
+            <a href="https://getbootstrap.com/" class="btn btn-dark mt-3"
+              ><i class="bi bi-chevron-right"></i>Read Full Blog</a
+            >
+          </div>
         </div>
       </div>
     </section>
+    <!-- goals -->
+    <section class="p-5 bg-dark text-warning text-center">
+      <div class="container" id="goal">
+        <h1>
+          <b> Our goal:-</b>
+        </h1>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus libero
+          odit quidem sed earum iusto quis, omnis magnam expedita cumque
+          corporis qui dolorum, ipsa corrupti quas mollitia modi maxime in?
+          Repudiandae tempora suscipit excepturi earum rerum rem, ipsam nisi
+          maxime, praesentium ea eaque voluptatum sunt eum nihil magni
+          cupiditate cum recusandae! Quia sint reprehenderit asperiores
+          excepturi provident totam assumenda doloribus! Totam non quae nam.
+          Pariatur ullam a soluta molestiae doloremque, architecto unde ipsam
+          laudantium voluptatum fuga fugit quasi quae dolorem cumque corporis
+          cupiditate? Minima quo itaque esse debitis placeat suscipit? Nulla
+          ullam, quod totam tempore deleniti quo consequatur odit facilis
+          necessitatibus pariatur eos eveniet placeat, molestias, in et modi
+          autem? Voluptates ducimus nesciunt fugit dicta! Amet veritatis
+          distinctio magnam explicabo. Molestiae aut eveniet tempora temporibus
+          voluptas consequatur neque nihil itaque explicabo facere fugiat totam
+          earum in doloremque, ipsum, omnis accusantium odio minus quos quae
+          dolorem sapiente illo! Deserunt, ducimus quae?
+        </p>
+      </div>
+    </section>
+    <!-- members -->
+    <section class="p-5 bg-warning" id="members">
+      <div class="container">
+        <h2 class="text-center text-dark">
+          <b> Our Members:-</b>
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/1.jpg"
+                  class="rounded-circle mb-3"
+                  alt="picture"
+                />
+                <h3 class="card-title mb-3">Random Random</h3>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Deleniti, velit!
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a
+                ><a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a
+                ><a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/10.jpg"
+                  class="rounded-circle mb-3"
+                  alt="picture"
+                />
+                <h3 class="card-title mb-3">Random Random</h3>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Deleniti, velit!
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a
+                ><a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a
+                ><a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/1.jpg"
+                  class="rounded-circle mb-3"
+                  alt="picture"
+                />
+                <h3 class="card-title mb-3">Random Random</h3>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Deleniti, velit!
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a
+                ><a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a
+                ><a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/10.jpg"
+                  class="rounded-circle mb-3"
+                  alt="picture"
+                />
+                <h3 class="card-title mb-3">Random Random</h3>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Deleniti, velit!
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a
+                ><a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a
+                ><a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  end of members and start of contacts -->
+    <section class="p-5 bg-dark text-warning" id="contacts">
+      <div class="container">
+        <div class=" row g-4">
+          <div class="col-md mb-4" >
+            <span class="h2 text-center mb-4" id="headingc">Contact Us:-</span>
+           <ul class="list-group list-group-flush lead">
+             <li class="class list-group-item text-warning bg-dark">
+               <span class="fw-bold">Our Location:</span> Lorem ipsum dolor sit amet.
+             </li>
+             <li class="class list-group-item text-warning bg-dark">
+              <span class="fw-bold">Our email:</span> Lorem@gmail.com
+            </li>
+            <li class="class list-group-item text-warning bg-dark">
+              <span class="fw-bold">Our Number:</span> 0123456789.
+            </li>
+
+           </ul>
+          </div>
+      </div>
+    </section>
+    <!-- end of contact and beginning of footer -->
+    <footer class=" p-5 text-warning text-center position-relative" id="foot">
+      <p class="lead">Copyright &copy; 2022 Blogs</p>
+      <a href="" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h2"></i>
+      </a>
+    </footer>
+
+    <!-- modal -->
+    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="orangeForm-name" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+          </div>
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="orangeForm-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+          </div>
+  
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="orangeForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+          </div>
+  
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-deep-orange">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </div> 
   </body>
 </html>
